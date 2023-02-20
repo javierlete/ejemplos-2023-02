@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from './componentes/login.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ejemplos';
+
+  fecha = '2001-02-03';
+
+  login(usuario: Usuario) {
+    console.log('APP', usuario);
+  }
 }
