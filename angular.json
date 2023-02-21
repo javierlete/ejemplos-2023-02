@@ -4,6 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "ejemplos": {
+      "i18n": {
+        "sourceLocale": "es-ES"
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",

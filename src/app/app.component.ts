@@ -8,10 +8,15 @@ import { Usuario } from './componentes/login.component';
 })
 export class AppComponent {
   title = 'ejemplos';
-
+  usuario?: Usuario;
   fecha = '2001-02-03';
 
   login(usuario: Usuario) {
     console.log('APP', usuario);
+    this.usuario = usuario;
+  }
+
+  mostrar(dato: any): void {
+    console.log(dato);
   }
 }

@@ -1,4 +1,15 @@
+{{ fecha | date }}
+{{ 1234.5 | number }}
+{{ 1234.5 | currency: 'EUR' }}
+{{ fecha | date: 'dd / MM / YYYY hh:mm:ss':'GMT':'es-ES' }}
+
+<input (keydown.shift.t)="mostrar($event)">
+
+<app-destacado>A ver si salgo en negrilla</app-destacado>
+
 <app-login (onLogin)="login($event)"></app-login>
+
+<pre>{{usuario | json}}</pre>
 
 <app-labelinput id="fecha" etiqueta="Fecha" tipo="date" 
     [dato]="fecha" (datoChange)="fecha=$event"></app-labelinput>
