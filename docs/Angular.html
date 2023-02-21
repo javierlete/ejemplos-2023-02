@@ -276,17 +276,24 @@
 	<li class="basic" id="FMID_1024621631FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">mietiqueta.component.css</div></li></ul></li></ul></li></ul></li></ul></li>
 	<li class="col" id="FMID_901974328FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">export class MietiquetaComponent</div>
 		<ul class="subexp">
+	<li class="col" id="FMID_1429373374FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Atributos</div>
+		<ul class="subexp">
 	<li class="col" id="FMID_1805727065FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">@Input() atributo</div>
 		<ul class="subexp">
 	<li class="basic" id="FMID_1216845047FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Creación de atributos de entrada en la etiqueta</div></li>
-	<li class="basic" id="FMID_933828036FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
-      &lt;app-mietiqueta <b>atributo</b>=""&gt;
+	<li class="col" id="FMID_933828036FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
+      &lt;app-mietiqueta <b>atributo</b>="texto literal"&gt;
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1195319668FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[atributo]="'texto literal'"</div></li></ul></li>
+	<li class="basic" id="FMID_1298588667FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
+      &lt;app-mietiqueta <b>[atributo]</b>="expresión de typescript"&gt;
     </p></div></li></ul></li>
 	<li class="col" id="FMID_1277122324FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">@Output() evento = new EventEmitter&lt;TIPO&gt;();</div>
 		<ul class="subexp">
 	<li class="basic" id="FMID_1942231793FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Creación de un evento en mi etiqueta</div></li>
 	<li class="basic" id="FMID_1655271898FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
-      &lt;app-mietiqueta <b>(evento)</b>=""&gt;
+      &lt;app-mietiqueta <b>(evento)</b>="metodo($event)"&gt;
     </p></div></li>
 	<li class="basic" id="FMID_1576384095FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;"><a href="https://angular.io/generated/images/guide/template-syntax/syntax-diagram.svg">https://angular.io/generated/images/guide/template-syntax/syntax-diagram.svg</a> <a href="https://angular.io/generated/images/guide/template-syntax/syntax-diagram.svg"><img src="Angular.html_files/ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li>
 	<li class="col" id="FMID_334851768FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Two way binding</div>
@@ -298,4 +305,68 @@
 	<li class="basic" id="FMID_1554929402FM"><div class="nodecontent" style="color:#000000;font-size:83%;">@Input() dato: string</div></li></ul></li>
 	<li class="col" id="FMID_1928032923FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">(datoChange)="variable=$event"</div>
 		<ul class="subexp">
-	<li class="basic" id="FMID_1703688485FM"><div class="nodecontent" style="color:#000000;font-size:83%;">@Output() datoChange = new EventEmitter&lt;string&gt;()</div></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></div></body></html>
+	<li class="basic" id="FMID_1703688485FM"><div class="nodecontent" style="color:#000000;font-size:83%;">@Output() datoChange = new EventEmitter&lt;string&gt;()</div></li></ul></li></ul></li></ul></li></ul></li>
+	<li class="col" id="FMID_1325615472FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Ciclo de vida</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_320298086FM"><div class="nodecontent" style="color:#000000;font-size:83%;">ngOnChanges(SimpleChanges)</div></li>
+	<li class="basic" id="FMID_1030006660FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">ngOnInit()</div></li>
+	<li class="basic" id="FMID_1663168312FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-style:italic;">ngDoCheck()</div></li>
+	<li class="basic" id="FMID_1674248293FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-style:italic;">ngAfterContentInit()</div></li>
+	<li class="basic" id="FMID_787805633FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-style:italic;">ngAfterContentChecked()</div></li>
+	<li class="basic" id="FMID_1538219271FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-style:italic;">ngAfterViewInit()</div></li>
+	<li class="basic" id="FMID_59849731FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-style:italic;">ngAfterViewChecked()</div></li>
+	<li class="basic" id="FMID_718006781FM"><div class="nodecontent" style="color:#000000;font-size:83%;">ngOnDestroy()</div></li></ul></li></ul></li></ul></li>
+	<li class="col" id="FMID_1259428785FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Templates</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1986438899FM"><div class="nodecontent" style="color:#000000;font-size:83%;">{{expr}}</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_849455902FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Interpolación de texto</div></li></ul></li>
+	<li class="col" id="FMID_411107360FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[atributo]="expr"</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1503544505FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Atributo enlazado con expresión de typescript (Input)</div></li></ul></li>
+	<li class="col" id="FMID_1235193262FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[attr.atributohtml]="valor"</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_687029537FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Si valor es undefined o null no aparece el atributo</div></li></ul></li>
+	<li class="basic" id="FMID_467024827FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[class.clase]="exprBooleana"</div></li>
+	<li class="col" id="FMID_1200488618FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[class]=</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_31469729FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
+      'una dos tres'
+    </p></div></li>
+	<li class="basic" id="FMID_954991136FM"><div class="nodecontent" style="color:#000000;font-size:83%;">['una','dos','tres']</div></li>
+	<li class="basic" id="FMID_596003013FM"><div class="nodecontent" style="color:#000000;font-size:83%;">{ una: true, dos: true, tres: true }</div></li></ul></li>
+	<li class="basic" id="FMID_1599118704FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[style.propiedad]="valor"</div></li>
+	<li class="col" id="FMID_1647039934FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[style]=</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_381777774FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
+      'prop = valor; prop = valor;'
+    </p></div></li>
+	<li class="basic" id="FMID_987164680FM"><div class="nodecontent" style="color:#000000;font-size:83%;">{ prop: valor, prop: valor }</div></li></ul></li>
+	<li class="col" id="FMID_1427100692FM"><div class="nodecontent" style="color:#000000;font-size:83%;">(evento)="metodo($event)"</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_863816998FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Evento (Output)</div></li></ul></li>
+	<li class="basic" id="FMID_499604768FM"><div class="nodecontent" style="color:#000000;font-size:83%;">(keydown.modificadores.tecla)="metodo($event)"</div></li>
+	<li class="col" id="FMID_840042960FM"><div class="nodecontent" style="color:#000000;font-size:83%;">[(dato)]</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_279792944FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Two way binding</div></li></ul></li>
+	<li class="col" id="FMID_1049887929FM"><div class="nodecontent" style="color:#000000;font-size:83%;">#variable</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1230796353FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Variable de plantilla</div></li>
+	<li class="basic" id="FMID_1821494980FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Sólo se puede utilizar dentro de la plantilla</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1729923436FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Pipes</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1179481917FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><a href="https://angular.io/api?type=pipe"><a href="https://angular.io/api?type=pipe">Angular - API List</a></a> <a href="https://angular.io/api?type=pipe"><img src="Angular.html_files/ilink.png" alt="User Link" style="border-width:0" /></a></div></li>
+	<li class="basic" id="FMID_1215765844FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">ng add @angular/localize</div></li></ul></li>
+	<li class="col" id="FMID_1305213596FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Tipos de comunicaciones</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_209098730FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Padre -&gt; Hijo</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_814727799FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Atributos</div></li>
+	<li class="basic" id="FMID_1224582256FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Con o sin setters en los hijos</div></li>
+	<li class="basic" id="FMID_551964401FM"><div class="nodecontent" style="color:#000000;font-size:83%;">ngOnChanges</div></li></ul></li>
+	<li class="col" id="FMID_1895831195FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Hijo -&gt; Padre</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_2420888FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Eventos</div></li>
+	<li class="basic" id="FMID_1199115835FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Variable hijo</div></li>
+	<li class="basic" id="FMID_1343548542FM"><div class="nodecontent" style="color:#000000;font-size:83%;">@ViewChild</div></li></ul></li>
+	<li class="basic" id="FMID_743589601FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><a href="https://angular.io/guide/inputs-outputs"><a href="https://angular.io/guide/inputs-outputs">Angular - Sharing data between child and parent directives and components</a></a> <a href="https://angular.io/guide/inputs-outputs"><img src="Angular.html_files/ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li></ul></li></ul></li></ul></div></body></html>
