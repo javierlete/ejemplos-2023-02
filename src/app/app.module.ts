@@ -12,6 +12,8 @@ import { TituloComponent } from './componentes/titulo.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { IvaPipe } from './iva.pipe';
+import { CartelDirective } from './cartel.directive';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -20,7 +22,9 @@ registerLocaleData(localeEs);
     TituloComponent,
     LabelinputComponent,
     LoginComponent,
-    DestacadoComponent
+    DestacadoComponent,
+    IvaPipe,
+    CartelDirective
   ],
   imports: [
     BrowserModule,

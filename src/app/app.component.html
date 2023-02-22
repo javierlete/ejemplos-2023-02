@@ -1,6 +1,21 @@
+<p appCartel="Olakease">Prueba</p>
+
+{{ 200 | iva }}
+
+{{ 0 | i18nPlural: mapeadoMensajes }}
+{{ 1 | i18nPlural: mapeadoMensajes }}
+{{ 2 | i18nPlural: mapeadoMensajes }}
+{{ 3 | i18nPlural: mapeadoMensajes }}
+
+{{ 'hombre' | i18nSelect: mapeadoInvitacion }}
+{{ 'mujer' | i18nSelect: mapeadoInvitacion }}
+{{ 'otro' | i18nSelect: mapeadoInvitacion }}
+
 {{ fecha | date }}
+{{ 'Hola a todos' | slice: 5: 10}}
+{{ 0.25 | percent }}
 {{ 1234.5 | number }}
-{{ 1234.5 | currency: 'EUR' }}
+{{ 1234.5 | currency: 'es-ES' }}
 {{ fecha | date: 'dd / MM / YYYY hh:mm:ss':'GMT':'es-ES' }}
 
 <input (keydown.shift.t)="mostrar($event)">
@@ -10,6 +25,7 @@
 <app-login (onLogin)="login($event)"></app-login>
 
 <pre>{{usuario | json}}</pre>
+<pre appCartel="Un JSON interesante">{{ { id: 1, nombre: 'Pepe'} | keyvalue | json}}</pre>
 
 <app-labelinput id="fecha" etiqueta="Fecha" tipo="date" 
     [dato]="fecha" (datoChange)="fecha=$event"></app-labelinput>
