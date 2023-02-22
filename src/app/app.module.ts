@@ -14,6 +14,7 @@ import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import { IvaPipe } from './iva.pipe';
 import { CartelDirective } from './cartel.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -28,7 +29,8 @@ registerLocaleData(localeEs);
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
