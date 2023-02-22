@@ -17,6 +17,7 @@ import localeEs from '@angular/common/locales/es';
 import { IvaPipe } from './iva.pipe';
 import { CartelDirective } from './cartel.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppMaterialModule } from './app-material.module';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -33,7 +34,7 @@ registerLocaleData(localeEs);
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    AppMaterialModule
   ],
   providers: [
     {
