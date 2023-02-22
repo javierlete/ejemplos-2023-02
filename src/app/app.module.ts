@@ -18,6 +18,8 @@ import { IvaPipe } from './iva.pipe';
 import { CartelDirective } from './cartel.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material.module';
+import { PrincipalComponent } from './principal/principal.component';
+import { EjemplosComponent } from './ejemplos.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -28,7 +30,9 @@ registerLocaleData(localeEs);
     LoginComponent,
     DestacadoComponent,
     IvaPipe,
-    CartelDirective
+    CartelDirective,
+    PrincipalComponent,
+    EjemplosComponent
   ],
   imports: [
     BrowserModule,
