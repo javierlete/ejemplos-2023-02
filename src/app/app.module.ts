@@ -1,5 +1,7 @@
 import '@angular/common/locales/global/es';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -30,7 +32,8 @@ registerLocaleData(localeEs);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSlideToggleModule
   ],
   providers: [
     {
