@@ -369,4 +369,65 @@
 	<li class="basic" id="FMID_2420888FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Eventos</div></li>
 	<li class="basic" id="FMID_1199115835FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Variable hijo</div></li>
 	<li class="basic" id="FMID_1343548542FM"><div class="nodecontent" style="color:#000000;font-size:83%;">@ViewChild</div></li></ul></li>
-	<li class="basic" id="FMID_743589601FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><a href="https://angular.io/guide/inputs-outputs"><a href="https://angular.io/guide/inputs-outputs">Angular - Sharing data between child and parent directives and components</a></a> <a href="https://angular.io/guide/inputs-outputs"><img src="Angular.html_files/ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li></ul></li></ul></li></ul></div></body></html>
+	<li class="basic" id="FMID_743589601FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><a href="https://angular.io/guide/inputs-outputs"><a href="https://angular.io/guide/inputs-outputs">Angular - Sharing data between child and parent directives and components</a></a> <a href="https://angular.io/guide/inputs-outputs"><img src="Angular.html_files/ilink.png" alt="User Link" style="border-width:0" /></a></div></li></ul></li></ul></li>
+	<li class="col" id="FMID_957152716FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Directivas (atributos independientes)</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_509419160FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Incorporadas</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_842019201FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Atributo</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_65822102FM"><div class="nodecontent" style="color:#000000;font-size:83%;">ngClass</div></li>
+	<li class="basic" id="FMID_885059435FM"><div class="nodecontent" style="color:#000000;font-size:83%;">ngStyle</div></li>
+	<li class="col" id="FMID_816561195FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">ngModel</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_476079261FM"><div class="nodecontent" style="color:#000000;font-size:83%;">FormsModule</div></li>
+	<li class="basic" id="FMID_1661577077FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Two way binding para inputs</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1253645557FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Estructurales</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1007997521FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">*ngIf</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_660710263FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
+      &lt;div <b>*ngIf="booleano"</b>&gt;
+    </p><p>
+      &lt;p&gt;Cierto&lt;/p&gt;
+    </p><p>
+      &lt;/div&gt;
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_578472690FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p><b>&lt;ng-template [ngIf]="booleano"&gt;</b></p><p>
+      &lt;div&gt;
+    </p><p>
+      &lt;p&gt;Cierto&lt;/p&gt;
+    </p><p>
+      &lt;/div&gt;
+    </p><p><b>&lt;/ng-template&gt;</b></p></div></li></ul></li></ul></li>
+	<li class="col" id="FMID_449652966FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">[ngSwitch]</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_362326459FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">*ngSwitchCase</div></li>
+	<li class="basic" id="FMID_1583411340FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">*ngSwitchDefault</div></li></ul></li>
+	<li class="col" id="FMID_1546781044FM"><div class="nodecontent" style="color:#000000;font-size:83%;font-weight:bold;">*ngFor</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1978637712FM"><div class="nodecontent" style="color:#000000;font-size:83%;">let dato of datos; let i=index; trackBy: trackByItems</div></li>
+	<li class="col" id="FMID_1452034532FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p>
+      &lt;div
+    </p><p>
+        <b>*ngFor="let hero of heroes; let i=index; let odd=odd; trackBy: trackById"</b></p><p>
+        [class.odd]="odd"&gt;
+    </p><p>
+        ({{i}}) {{hero.name}}
+    </p><p>
+      &lt;/div&gt;
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_219401210FM"><div class="nodecontent" style="color:#000000;font-size:83%;"><p><b>&lt;ng-template ngFor let-hero [ngForOf]="heroes" </b></p><p><b>  let-i="index" let-odd="odd" [ngForTrackBy]="trackById"&gt;</b></p><p>
+        &lt;div [class.odd]="odd"&gt;
+    </p><p>
+          ({{i}}) {{hero.name}}
+    </p><p>
+        &lt;/div&gt;
+    </p><p><b>&lt;/ng-template&gt;</b></p></div></li></ul></li></ul></li>
+	<li class="col" id="FMID_241096111FM"><div class="nodecontent" style="color:#000000;font-size:83%;">&lt;ng-container&gt;</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_368251689FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Ninguna etiqueta</div></li></ul></li></ul></li></ul></li>
+	<li class="basic" id="FMID_604134813FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Atributo</div></li>
+	<li class="basic" id="FMID_896383107FM"><div class="nodecontent" style="color:#000000;font-size:83%;">Estructura</div></li></ul></li></ul></li></ul></li></ul></div></body></html>
