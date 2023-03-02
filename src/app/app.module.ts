@@ -20,6 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material.module';
 import { PrincipalComponent } from './principal/principal.component';
 import { EjemplosComponent } from './ejemplos.component';
+import { FormulariosReactivosComponent } from './componentes/formularios-reactivos/formularios-reactivos.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { dniValidator } from './dni.directive';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -32,13 +35,15 @@ registerLocaleData(localeEs);
     IvaPipe,
     CartelDirective,
     PrincipalComponent,
-    EjemplosComponent
+    EjemplosComponent,
+    FormulariosReactivosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
